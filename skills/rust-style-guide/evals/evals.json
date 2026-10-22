@@ -1,0 +1,41 @@
+{
+  "skill": "rust-style-guide",
+  "test_cases": [
+    {
+      "name": "review_import_style",
+      "input": "Review this Rust code for Google style compliance regarding imports:\n\nuse std::collections::{HashMap, HashSet};\nuse regex::Regex;\n\nfn process() {\n    let re = Regex::new(\"foo\").unwrap();\n    let map: HashMap<_, _> = HashMap::new();\n}",
+      "assertions": [
+        "Notes that types are correctly imported and used unqualified",
+        "Suggests checking for local trait imports if any traits were used",
+        "Mentions preference against glob imports"
+      ]
+    },
+    {
+      "name": "design_api_error_handling",
+      "input": "Design a library function that looks up a user by ID. Should it return Option, Result, or panic? Follow Google Rust style.",
+      "assertions": [
+        "Recommends Option for obvious missing case or Result for recoverable errors with context",
+        "Notes that panic is for violated invariants",
+        "Distinguishes library code (binding rules) vs application"
+      ]
+    },
+    {
+      "name": "naming_and_docs",
+      "input": "Write a public function that converts a string to a custom Id type. Follow Google naming and documentation rules.",
+      "assertions": [
+        "Uses from_ or try_new naming with From impl if appropriate",
+        "Includes /// doc comment documenting behavior and any panics",
+        "Avoids abbreviations"
+      ]
+    },
+    {
+      "name": "unsafe_justification",
+      "input": "Is this unsafe block acceptable under Google Rust style? unsafe { ptr.read() }",
+      "assertions": [
+        "Requires SAFETY: comment and justification why no safe alternative",
+        "Suggests encapsulating in safe abstraction",
+        "Notes only when necessary"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "skill": "rust-style-guide",
+  "test_cases": [
+    {
+      "input": "Review my Rust code for Google style guide compliance",
+      "should_trigger": true
+    },
+    {
+      "input": "How should I name this Rust function according to Google's Rust style?",
+      "should_trigger": true
+    },
+    {
+      "input": "Write a Rust API following the Google Rust style guide",
+      "should_trigger": true
+    },
+    {
+      "input": "Is this import style correct for Chromium Rust?",
+      "should_trigger": true
+    },
+    {
+      "input": "Explain Rust ownership and borrowing",
+      "should_trigger": false
+    },
+    {
+      "input": "How do I install Rust?",
+      "should_trigger": false
+    },
+    {
+      "input": "Write a Python function",
+      "should_trigger": false
+    }
+  ]
+}

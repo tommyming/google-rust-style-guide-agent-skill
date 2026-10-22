@@ -1,0 +1,33 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary / generated
+*.tmp
+*.log
+*.tar.gz
+*.zip
+
+# Node (if you ever add tooling)
+node_modules/
+package-lock.json
+
+# Python (if you run validation scripts)
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local environment
+.env
+.env.local
+
+# Unrelated
+evals/
