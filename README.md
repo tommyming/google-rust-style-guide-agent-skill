@@ -41,7 +41,6 @@ skills/
 └── rust-style-guide/
     ├── SKILL.md              # Main instructions
     ├── references/           # Detailed rules (organization, API design, naming/docs/impl)
-    ├── evals/                # Test cases and triggers
     └── CHANGELOG.md
 ```
 
